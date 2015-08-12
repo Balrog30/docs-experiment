@@ -1,0 +1,17 @@
+---
+layout: demo
+title: Pie Example
+scripts:
+- /ng-google-chart.js
+- /sample.js
+- /demos/generic.js
+---
+<div ng-app="google-chart-sample" ng-controller="GenericChartCtrl" ng-init="chartObject.type='PieChart'">
+<h1 ng-bind="chartObject.type"></h1>
+<div>
+    Onions: <input type="number" ng-model="onions[1].v" />
+</div>
+
+<div google-chart chart="chartObject" style="height:600px; width:100%;"></div>
+</div>
+<iframe src="{{site.baseurl}}/demos/generic.js" style="width:90%; height: 600px; margin: 1%; border: 1px solid black;" frameborder="0"></iframe>

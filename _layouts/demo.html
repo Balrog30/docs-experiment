@@ -1,6 +1,12 @@
 ---
-layout: page
+layout: default
 ---
-
+<div class="post">
 {{content}}
-{% include base-scripts.html %}
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+{% if page.scripts %}
+  {% for script in page.scripts %}
+  <script src="{{ site.baseurl }}{{ script }}"></script>
+  {% endfor %}
+{% endif %}
+</div>

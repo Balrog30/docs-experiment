@@ -1,0 +1,20 @@
+---
+layout: demo
+title: Annotation Chart Example
+scripts:
+- /ng-google-chart.js
+- /sample.js
+- /demos/annotation.js
+---
+
+<h1>Annotation Chart</h1>
+
+<div ng-controller="AnnotationChartCtrl" ng-app="google-chart-sample">
+    <div>
+        Some value to change: <input type="number" ng-model="secondRow[1].v" />
+    </div>
+
+    <div google-chart chart="chartObject" style="height:600px; width:100%;"></div>
+</div>
+
+<iframe src="{{ site.baseurl }}/demos/annotation.js" style="width:90%; height: 600px; margin: 1%; border: 1px solid black;" frameborder="0"></iframe>
