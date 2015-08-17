@@ -1,0 +1,20 @@
+---
+layout: default
+title: Demos
+permalink: /demos/
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Demos</h1>
+
+  <ul class="post-list">
+    {% for demo in site.demos %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ demo.url | prepend: site.baseurl }}">{{ demo.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
