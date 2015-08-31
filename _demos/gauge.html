@@ -1,16 +1,14 @@
 ---
-layout: demo
-title: Gauge Example
+layout: post
+title: Gauge
 scripts:
 - /ng-google-chart.js
 - /sample.js
 - /demos/gauge.js
+ng-controller: "GaugeChartCtrl"
+ng-app: "google-chart-sample"
 ---
-	
-<div ng-controller="GaugeChartCtrl" ng-app="google-chart-sample">
-	<h1 ng-bind="chartObject.type"></h1>
-	<div google-chart chart="chartObject" style="height:130px; width:100%;"></div>
-</div>
+<div google-chart chart="chartObject" style="height:130px; width:100%;"></div>
 
 {% highlight javascript %}
 	{% include_relative gauge.js %}

@@ -1,13 +1,14 @@
 ---
-layout: demo
-title: Column Example
+layout: post
+title: Column Chart
 scripts:
 - /ng-google-chart.js
 - /sample.js
 - /demos/generic.js
+ng-app: "google-chart-sample"
+ng-controller: "GenericChartCtrl"
 ---
-<div ng-app="google-chart-sample" ng-controller="GenericChartCtrl" ng-init="chartObject.type='ColumnChart'">
-<h1 ng-bind="chartObject.type"></h1>
+<div ng-init="chartObject.type='ColumnChart'">
 <div>
     Onions: <input type="number" ng-model="onions[1].v" />
 </div>

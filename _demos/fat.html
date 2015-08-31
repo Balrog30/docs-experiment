@@ -1,13 +1,15 @@
 ---
-layout: demo
+layout: post
 title: Interactive Example
 scripts:
 - /ng-google-chart.js
 - /sample.js
 - /demos/fat.js
+ng-app: "google-chart-sample"
+ng-controller: "FatChartCtrl"
 ---
 
-<div ng-app="google-chart-sample" ng-controller="FatChartCtrl">
+<div>
     <div>
         <h2>Live edit</h2>
 
@@ -79,7 +81,7 @@ scripts:
         <h2>Usage</h2>
         <pre ng-non-bindable>&lt;div google-chart chart="chartObject" style="{{cssStyle}}"&gt;&lt;/div&gt;</pre>
         <h2>Setup</h2>
-        <pre>$scope.chartObject = {{chart|json}}</pre>
+        <pre>$scope.chartObject = !! chart|json:true !!</pre>
 
     </div>
 </div>
