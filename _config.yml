@@ -11,5 +11,5 @@ github_username:  angular-google-chart
 markdown: kramdown
 
 collections:
-    demos:
+    examples:
         output: true
