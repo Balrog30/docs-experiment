@@ -10,6 +10,12 @@ github_username:  angular-google-chart
 # Build settings
 markdown: kramdown
 
+latest_version: 0.0.11
+available_versions:
+    - 0.1.0-beta.1
+    - 0.0.11
+
 collections:
-    examples:
+    docs:
         output: true
+        permalink: "docs/:path/"

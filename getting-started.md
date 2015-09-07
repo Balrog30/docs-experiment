@@ -35,3 +35,9 @@ Angular Google Chart is hosted with [cdnjs.com](https://cdnjs.com/libraries/angu
 <!-- minified for production -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-chart/0.0.11/ng-google-chart.min.js" type="text/javascript"></script>
 {% endhighlight%}
+
+### Add Module Dependency to your App
+
+{% highlight JavaScript %}
+angular.module('myApp', ['googlechart']);
+{% endhighlight %}

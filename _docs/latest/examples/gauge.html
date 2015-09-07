@@ -1,0 +1,17 @@
+---
+layout: docs
+title: Gauge
+category: Examples
+version: 0.0.11
+latest: true
+scripts:
+- /sample.js
+- /docs/latest/examples/gauge.js
+ng-controller: "GaugeChartCtrl"
+ng-app: "google-chart-sample"
+---
+<div google-chart chart="chartObject" style="height:130px; width:100%;"></div>
+
+{% highlight javascript %}
+	{% include_relative gauge.js %}
+{% endhighlight %}

@@ -1,0 +1,22 @@
+---
+layout: docs
+title: Annotation Chart
+category: Examples
+version: 0.0.11
+latest: false
+scripts:
+- /sample.js
+- /docs/0.0.11/examples/annotation.js
+ng-controller: "AnnotationChartCtrl"
+ng-app: "google-chart-sample"
+---
+<div>
+    Some value to change:
+    <input type="number" ng-model="secondRow[1].v" />
+</div>
+
+<div google-chart chart="chartObject" style="height:600px; width:100%;"></div>
+
+{% highlight javascript %}
+    {% include_relative annotation.js %}
+{% endhighlight %}
