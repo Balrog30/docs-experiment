@@ -1,9 +1,9 @@
 ---
-layout: post
-version: 0.0.11
-latest: true
-title: Readme
-permalink: /docs/latest/index.html
+layout: docs
+title: Documentation
+version: 0.1.0-beta.1
+latest: false
+permalink: /docs/0.1.0-beta.1/index.html
 ---
 
 - [Guides]({{site.baseurl}}/docs/{{page.version}}/guides/)

@@ -3,7 +3,8 @@ layout: docs
 title: Examples
 category: Examples
 version: 0.0.11
-latest: false
+latest: true
+permalink: /docs/latest/examples/
 ---
 
 {% assign examples = site.docs | where:'version', page.version | where:'category', 'Examples' | where:'latest', page.latest %}
