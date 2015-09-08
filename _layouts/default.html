@@ -14,7 +14,7 @@
     </div>
     
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/{% if page.angular_version %}{{ page.angular_version}}{% else %}1.3.18{% endif %}/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-chart/{% if page.version %}{{ page.version }}{% else %}{% endif %}/ng-google-chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-chart/{% if page.version %}{{ page.version }}{% else %}{{ site.latest_version }}{% endif %}/ng-google-chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
     <script src="{{site.baseurl}}/scripts/googlechart-docs.js"></script>
     {% if page.scripts %}
