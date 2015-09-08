@@ -1,6 +1,6 @@
 /* global angular */
 
-angular.module("google-chart-sample", ["googlechart"]).value('googleChartApiConfig', {
+angular.module("google-chart-sample", ["googlechart", "googlechart-docs"]).value('googleChartApiConfig', {
     version: '1',
     optionalSettings: {
         packages: ['corechart', 'gauge'],
