@@ -2,7 +2,8 @@
 
 (function() {
     'use strict';
-    angular.module('google-chart-sample').controller("MultiChartCtrl", function($scope) {
+    angular.module("google-chart-sample", ["googlechart", "googlechart-docs"])
+    .controller("MultiChartCtrl", function($scope) {
 
         var chart1 = {};
         chart1.type = "AreaChart";

@@ -1,7 +1,8 @@
 /* global angular */
 (function() {
   'use strict';
-  angular.module('google-chart-sample').controller("GaugeChartCtrl", function($scope) {
+  angular.module("google-chart-sample", ["googlechart", "googlechart-docs"])
+  .controller("GaugeChartCtrl", function($scope) {
 
     $scope.chartObject = {};
     $scope.chartObject.type = "Gauge";

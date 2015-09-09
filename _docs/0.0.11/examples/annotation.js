@@ -1,6 +1,7 @@
 /* global angular */
 (function(){
-    angular.module("google-chart-sample").controller("AnnotationChartCtrl", function ($scope) {
+    angular.module("google-chart-sample", ["googlechart", "googlechart-docs"])
+    .controller("AnnotationChartCtrl", function ($scope) {
         $scope.chartObject = {};
 
         $scope.secondRow = [
