@@ -21,3 +21,36 @@ permalink: /docs/0.0.11/index.html
   - [{{ example.title }}]({{ example.url | prepend: site.baseurl }})
 {% endif%}
 {% endfor %}
+
+- [Providers]({{site.baseurl}}/docs/{{page.version}}/providers/)
+{% assign providers = site.docs | where:'version', page.version | where:'category', 'Providers' | where:'latest', page.latest %}
+{% for provider in providers %}
+{% if provider.title != provider.category %}
+  - [{{ provider.title }}]({{ provider.url | prepend: site.baseurl }})
+{% endif%}
+{% endfor %}
+
+- [Values]({{site.baseurl}}/docs/{{page.version}}/values)
+{% assign values = site.docs | where:'version', page.version | where:'category', 'Values' | where:'latest', page.latest %}
+{% for value in values %}
+{% if value.title != value.category %}
+  - [{{ value.title }}]({{ value.url | prepend: site.baseurl }})
+{% endif%}
+{% endfor %}
+
+- [Services]({{site.baseurl}}/docs/{{page.version}}/services/)
+{% assign services = site.docs | where:'version', page.version | where:'category', 'Services' | where:'latest', page.latest %}
+
+{% for service in services %}
+{% if service.title != service.category %}
+  - [{{ service.title }}]({{ service.url | prepend: site.baseurl }})
+{% endif%}
+{% endfor %}
+
+- [Directives]({{site.baseurl}}/docs/{{page.version}}/directives/)
+{% assign directives = site.docs | where:'version', page.version | where:'category', 'Directives' | where:'latest', page.latest %}
+{% for directive in directives %}
+{% if directive.title != directive.category %}
+  - [{{ directive.title }}]({{ directive.url | prepend: site.baseurl }})
+{% endif%}
+{% endfor %}
