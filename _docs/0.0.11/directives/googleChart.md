@@ -1,7 +1,7 @@
 ---
 layout: docs
 category: Directives
-title: googleChartApiConfig
+title: googleChart
 version: 0.0.11
 latest: false
 ---

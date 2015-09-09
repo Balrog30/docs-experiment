@@ -2,8 +2,8 @@
 layout: docs
 category: Directives
 title: googleChart
-version: 0.0.11
-latest: true
+version: 0.1.0-beta.1
+latest: false
 ---
 
 This is the heart of Angular Google Chart. See the [Examples]({{site.baseurl}}/docs/0.0.11/examples/)
@@ -21,18 +21,6 @@ for practical code examples.
         <td>expression</td>
         <td>Binding to the chart object with the values needed to build the chart.</td>
         <td><p><code>chart="chartObject"</code></p></td>
-    </tr>
-    <tr>
-        <td><p><code>on-select</code></p></td>
-        <td>expression</td>
-        <td>Event handler bound to the chart wrapper's select event.</td>
-        <td><p><code>on-select="selectHandler(selectedItem)"</code></p></td>
-    </tr>
-    <tr>
-        <td><p><code>on-ready</code></p></td>
-        <td>expression</td>
-        <td>Event handler bound to the chart wrapper's ready event.</td>
-        <td><p><code>on-ready="readyHandler(chartWrapper)"</code></p></td>
     </tr>
     <tr>
         <td><p><code>before-draw</code></p></td>
