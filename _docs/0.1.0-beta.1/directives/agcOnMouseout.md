@@ -6,4 +6,7 @@ version: 0.1.0-beta.1
 latest: false
 ---
 
-This page is a stub, waiting for content to be written.
+#### Code Example
+{% highlight html %}
+<div google-chart chart="chartObject" agc-on-mouseout="mouseoutHandler(row,column)"></div>
+{% endhighlight %}

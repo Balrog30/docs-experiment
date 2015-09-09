@@ -1,9 +1,12 @@
 ---
 layout: docs
 category: Directives
-title: agcOnReady
+title: agcOnError
 version: 0.1.0-beta.1
 latest: false
 ---
 
-This page is a stub, waiting for content to be written.
+#### Code Example
+{% highlight html %}
+<div google-chart chart="chartWrapper" agc-on-error="errorHandler(message)"></div>
+{% endhighlight %}
