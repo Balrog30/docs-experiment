@@ -5,7 +5,7 @@ category: Examples
 version: 0.0.11
 latest: false
 scripts:
-- /docs/0.0.11/examples/generic.js
+- /docs/0.0.11/examples/column.js
 ng-app: "google-chart-sample"
 ng-controller: "GenericChartCtrl"
 ---
@@ -16,6 +16,13 @@ ng-controller: "GenericChartCtrl"
 
 <div google-chart chart="chartObject" style="height:600px; width:100%;"></div>
 </div>
+
+<h4>HTML Template</h4>
+{% highlight html %}
+<div google-chart chart="chartObject" style="height:600px; width:100%;"></div>
+{% endhighlight %}
+
+<h4>JavaScript</h4>
 {% highlight javascript %}
-	{% include_relative generic.js %}
+	{% include_relative column.js %}
 {% endhighlight %}

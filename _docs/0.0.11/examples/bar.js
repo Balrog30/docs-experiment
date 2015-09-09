@@ -2,7 +2,9 @@
 angular.module("google-chart-sample", ["googlechart", "googlechart-docs"])
 .controller("GenericChartCtrl", function ($scope) {
     $scope.chartObject = {};
-
+    
+    $scope.chartObject.type = "BarChart";
+    
     $scope.onions = [
         {v: "Onions"},
         {v: 3},
@@ -31,9 +33,6 @@ angular.module("google-chart-sample", ["googlechart", "googlechart-docs"])
         ]}
     ]};
 
-
-    // $routeParams.chartType == BarChart or PieChart or ColumnChart...
-    //$scope.chartObject.type = $scope.chartType;
     $scope.chartObject.options = {
         'title': 'How Much Pizza I Ate Last Night'
     };
